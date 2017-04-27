@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    p
+      if user 
+        a(href='http://localhost:3000/auth/logout') Logout
+      else
+        a(href='http://localhost:3000/auth/linkedin') Login with LinkedIn
+      
